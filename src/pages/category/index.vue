@@ -1,10 +1,22 @@
 <template>
-  <div>category</div>
+<div>
+  <!-- 搜索框 -->
+  <SearchHotspot />
+</div>
+  
 </template>
 
 <script>
-export default {
+import SearchHotspot from '@/components/search_hotspot'
 
+export default {
+data() {
+  return {
+    components: {
+      SearchHotspot
+    }
+  }
+},
 }
 </script>
 
